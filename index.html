@@ -3,54 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Notes & PDFs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .dark-mode {
-            background-color: #333;
-            color: white;
-        }
-        .search-bar {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .pdf-list {
-            list-style: none;
-            padding: 0;
-        }
-        .pdf-list li {
-            margin: 10px 0;
-        }
-    </style>
+    <title>Premium Notes - Free PDFs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Free Notes & PDFs</h1>
-        <input type="text" class="search-bar" placeholder="Search notes...">
-        <ul class="pdf-list">
-            <li><a href="notes/math.pdf" download>Math Notes</a></li>
-            <li><a href="notes/physics.pdf" download>Physics Notes</a></li>
-            <li><a href="notes/chemistry.pdf" download>Chemistry Notes</a></li>
-        </ul>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    </div>
+    <header>
+        <h1>Premium Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
+    <section id="home">
+        <h2>Welcome to Premium Notes</h2>
+        <p>Download high-quality notes for free and enhance your learning.</p>
+    </section>
+
+    <section id="notes">
+        <h2>Download Notes</h2>
+        <ul>
+            <li><a href="pdfs/sample.pdf" target="_blank">Physics Notes (PDF)</a></li>
+            <li><a href="pdfs/math.pdf" target="_blank">Math Notes (PDF)</a></li>
+        </ul>
+    </section>
+
+    <section id="videos">
+        <h2>Latest Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Premium Notes | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
+     
